@@ -1,0 +1,36 @@
+.Pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 380px;
+  padding-bottom: 1.5rem;
+}
+
+.Pagination button {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.Pagination .btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.5rem;
+  font-size: 1.8rem;
+  border-radius: 50%;
+  background-color: #9fddc1;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0.3rem 0.8rem;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.activeButton {
+  transform: scale(1.2);
+  background-color: #fff !important;
+  z-index: -1;
+}

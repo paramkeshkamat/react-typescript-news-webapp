@@ -1,0 +1,41 @@
+.userProfile {
+  background-color: #fff;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 0.3rem 0.8rem;
+  animation: userprofile 0.75s linear;
+}
+@keyframes userprofile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.leftDiv img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.rightDiv {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.rightDiv h2 {
+  font-size: 2.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.rightDiv p {
+  font-size: 1.8rem;
+}

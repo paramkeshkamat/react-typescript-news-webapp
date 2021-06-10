@@ -1,0 +1,12 @@
+.ListView {
+  min-height: 100vh;
+}
+
+.ListViewCards {
+  margin-left: 380px;
+  padding: 2.5rem 3.5rem 1.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}

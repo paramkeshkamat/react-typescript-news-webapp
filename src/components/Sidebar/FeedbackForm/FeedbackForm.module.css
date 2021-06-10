@@ -1,0 +1,169 @@
+.feedbackForm {
+  background-color: #e3eaf0;
+  position: fixed;
+  top: 0;
+  left: 380px;
+  min-height: 100vh;
+  padding: 3rem;
+  padding-right: 5rem;
+  transition: all 0.5s ease-in;
+  height: 100vh;
+  box-shadow: rgba(50, 50, 93, 0.15) 0.5rem 0.3rem 0.7rem;
+  z-index: 999;
+  opacity: 0;
+  border-top-right-radius: 3.5rem;
+  border-bottom-right-radius: 3.5rem;
+}
+
+.background {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.feedbackForm h1 {
+  font-size: 2.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.feedbackForm p {
+  font-size: 1.6rem;
+}
+
+.feedbackForm form {
+  margin-top: 3rem;
+}
+.feedbackForm form div > * {
+  display: block;
+  width: 100%;
+}
+
+.feedbackForm div {
+  margin: 1.2rem 0;
+}
+
+.feedbackForm label {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.feedbackForm input,
+.feedbackForm textarea {
+  padding: 0.8rem 1.2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 0.3rem 0.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.feedbackForm textarea {
+  height: 10rem;
+  resize: vertical;
+}
+
+.feedbackForm form button {
+  font-size: 1.7rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem 3rem;
+  background-color: #8ae2bb;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.feedbackForm .errorMessage {
+  color: red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  animation: errormsg 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes errormsg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.countrySearch {
+  position: relative;
+}
+
+.countrySearchInput {
+  display: flex;
+}
+.countrySearchInput > * {
+  display: inline !important;
+}
+
+.countryList {
+  position: absolute;
+  min-height: 6rem;
+  max-height: 12rem;
+  background-color: #fff;
+  top: 2.4rem;
+  padding: 0.5rem;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 0.3rem 0.8rem;
+  border-radius: 0.4rem;
+}
+.countryList p {
+  cursor: pointer;
+}
+
+.formSubmittedAlert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(0.5rem);
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.formSubmittedAlert div {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 0.3rem 0.8rem;
+  max-width: 40rem;
+  width: 90vw;
+}
+
+.formSubmittedAlert div svg {
+  font-size: 5rem;
+  color: #33c033;
+}
+
+.formSubmittedAlert div p {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+.formSubmittedAlert div button {
+  background-color: #33c033;
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,11 @@
+.GridView {
+  min-height: 100vh;
+}
+
+.GridViewCards {
+  margin-left: 380px;
+  padding: 2rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+}

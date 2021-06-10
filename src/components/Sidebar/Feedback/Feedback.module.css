@@ -1,0 +1,36 @@
+.feedback {
+  background-color: #fff;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 0.3rem 0.8rem;
+  animation: feedback 0.75s linear;
+}
+@keyframes feedback {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.feedback h2 {
+  font-size: 2.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.feedback button {
+  font-size: 1.8rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1rem 3rem;
+  background-color: #99f0c9;
+  font-weight: 600;
+}

@@ -1,0 +1,59 @@
+.toggleButton {
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+  width: 80%;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 0.3rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: togglebutton 0.75s linear;
+}
+@keyframes togglebutton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.toggleButton h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2.35rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  align-items: center;
+  border-radius: 0.4rem;
+}
+
+.buttons button {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.buttons button:first-child {
+  border-bottom-left-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
+}
+
+.buttons button:last-child {
+  border-bottom-right-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+.buttons button svg {
+  font-size: 4.5rem;
+}
